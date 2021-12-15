@@ -19,9 +19,9 @@ public class Program {
         while(true) {
             try {
                 UI.clearScreen();
-                UI.printBoard(chessMatch.getPieces());
+                UI.printMatch(chessMatch);
                 System.out.println();
-                System.out.print("Local de origem da peça: ");
+                System.out.print("Escolha a posição da peça a ser movida: ");
                 ChessPosition source = UI.readChessPosition(input);
 
                 boolean[][] possibleMoves = chessMatch.possibleMoves(source);
